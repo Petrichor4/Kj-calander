@@ -28,10 +28,13 @@ button {
     top: 3px;
 }
 main {
+    background: url(./Untitled_Artwork.jpg);
+    background-size: cover;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+/* Make it so only moodboard scrolls */
 .moodBoard {
     background-color: #1f7ad5;
     box-shadow: 10px 11px 20px 3px #888888;
@@ -46,12 +49,14 @@ main {
     box-shadow: 10px 11px 20px 3px #888888;
     margin-left: auto;
     min-width: 400px;
+    max-width: 400px;
     height: 1000px;
 }
 .corkBoard {
-    background-color: #8b4513;
+    background:url(./corkboard-texture-2.jpg);
+    background-size: contain;
     box-shadow: 10px 11px 20px 3px #888888;
-    border-radius: 10px;
+    border-radius: 5px;
     min-width: 400px;
     height: 1000px;
     margin-right: auto;
@@ -68,11 +73,27 @@ main {
     margin-top: 8px;
     margin-right: 40px;
     list-style-type: "\2610   ";}
-.memoPad ul {
-    overflow: auto;
-}
+/* .active {
+    background-color:#0000001e;
+    border: none;
+} */
 /* @media (max-width: 1000px ) {
-    main { 
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+    header {
+        height: 25%;
         flex-wrap: wrap;
+    }
+    .moodBoard {
+        min-width: 0;
+        width: 100%;
+        height: 430px;
+    }
+    .memoPad {
+        width: 100%;
+        height: 430px;
+        margin: 0;
     }
 } */
